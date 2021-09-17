@@ -9,13 +9,15 @@
   </head>
   <body>
     <div class="demo">
-      <model-viewer src="Robot.glb" skybox-image="Stadium.hdr" auto-rotate camera-controls animation-name="Running" autoplay></model-viewer>
+      <model-viewer id="model" src="Robot.glb" skybox-image="Stadium.hdr" auto-rotate camera-controls animation-name="Running" autoplay ar></model-viewer>
 
       <div class="btncontainer">
-        <button class="button">Stop</button>
-        <button class="button">Run</button>
-        <button class="button">Wave</button>
+        <button class="button" onclick="stop()">Stop</button>
+        <button class="button" onclick="run()">Run</button>
+        <button class="button" onclick="wave()">Wave</button>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

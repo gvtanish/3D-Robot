@@ -3,10 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="style.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
   </head>
   <body>
-    <model-viewer src="Robot.glb" auto-rotate camera-controls></model-viewer>
+    <div class="demo">
+      <model-viewer src="Robot.glb" skybox-image="Stadium.hdr" auto-rotate camera-controls animation-name="Running" autoplay></model-viewer>
+
+      <div class="btncontainer">
+        <button class="button">Stop</button>
+        <button class="button">Run</button>
+        <button class="button">Wave</button>
+      </div>
+    </div>
   </body>
 </html>
